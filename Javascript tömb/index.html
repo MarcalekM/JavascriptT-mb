@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Apps</title>
+    <!-- Bootstrap CSS linkek -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Páros sorok stílusának beállítása */
+        tbody tr:nth-child(even) {
+            background-color: #dcdcdc; /* Sötétebb szürke */
+        }
+
+        /* Páratlan sorok stílusának beállítása */
+        tbody tr:nth-child(odd) {
+            background-color: #f0f0f0; /* Világosabb szürke */
+        }
+        #fewestUsersBtn {
+        background-color: #4CAF50; /* Zöld */
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Web Apps</h1>
+        <button id="mostUsersBtn" class="btn btn-primary">Sort by Most Users</button>
+        <button id="fewestUsersBtn" class="btn btn-primary">Sort by Fewest Users</button>
+        <table class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Users</th>
+                </tr>
+            </thead>
+            <tbody id="webAppsTable">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
